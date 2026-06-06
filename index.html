@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen" aria-live="polite">
+        <div class="loading-content">
+            <div class="heart-loader" aria-hidden="true"></div>
+            <p class="loading-percentage">0%</p>
+            <p id="loading-quote" class="romantic-quote"></p>
+        </div>
+    </div>
+
+    <section id="opening-scene" class="opening-scene hidden" aria-label="Opening surprise">
+        <div class="night-sky" aria-hidden="true"></div>
+        <div class="gift-container">
+            <p class="gift-message">A special surprise for my beautiful wife ❤️</p>
+            <button id="gift-box" class="gift-box" type="button" aria-label="Open birthday surprise">
+                <span class="gift-lid"></span>
+                <span class="gift-base"></span>
+                <span class="gift-ribbon-v"></span>
+                <span class="gift-ribbon-h"></span>
+                <span class="gift-bow"></span>
+            </button>
+        </div>
+        <audio id="background-music" loop preload="auto"></audio>
+    </section>
+
+    <main id="main-content" class="hidden">
+        <section id="hero-section" class="hero-section section">
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p id="birthday-label" class="eyebrow"></p>
+                <h1 class="hero-title"></h1>
+                <p class="hero-subtitle"></p>
+                <button id="begin-story-btn" class="romantic-button" type="button">Begin Our Love Story</button>
+            </div>
+        </section>
+
+        <section id="love-counter-section" class="love-counter-section section">
+            <h2>Our Journey Together</h2>
+            <div class="counter-grid" aria-label="Time together">
+                <article class="counter-card glass-panel">
+                    <span id="years-together" class="counter-value">0</span>
+                    <h3>Years</h3>
+                </article>
+                <article class="counter-card glass-panel">
+                    <span id="months-together" class="counter-value">0</span>
+                    <h3>Months</h3>
+                </article>
+                <article class="counter-card glass-panel">
+                    <span id="days-together" class="counter-value">0</span>
+                    <h3>Days</h3>
+                </article>
+                <article class="counter-card glass-panel">
+                    <span id="hours-together" class="counter-value">0</span>
+                    <h3>Hours</h3>
+                </article>
+                <article class="counter-card glass-panel">
+                    <span id="minutes-together" class="counter-value">0</span>
+                    <h3>Minutes</h3>
+                </article>
+                <article class="counter-card glass-panel">
+                    <span id="seconds-together" class="counter-value">0</span>
+                    <h3>Seconds</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="memory-timeline-section" class="memory-timeline-section section">
+            <h2>Our Beautiful Memories</h2>
+            <div class="timeline"></div>
+        </section>
+
+        <section id="photo-gallery-section" class="photo-gallery-section section">
+            <h2>Our Photo Album</h2>
+            <div class="gallery-grid"></div>
+        </section>
+
+        <section id="love-letter-section" class="love-letter-section section">
+            <h2>A Special Letter For You</h2>
+            <button class="envelope-container" type="button" aria-expanded="false" aria-label="Open love letter">
+                <span class="envelope-back"></span>
+                <span class="letter">
+                    <span class="letter-content"></span>
+                </span>
+                <span class="envelope-front"></span>
+                <span class="envelope-flap"></span>
+            </button>
+        </section>
+
+        <section id="reasons-love-you-section" class="reasons-love-you-section section">
+            <h2>Reasons I Love You</h2>
+            <div class="flip-card-grid"></div>
+        </section>
+
+        <section id="interactive-heart-section" class="interactive-heart-section section">
+            <h2>My Heart Belongs To You</h2>
+            <div class="interactive-heart-container">
+                <button id="glowing-heart" class="glowing-heart" type="button" aria-label="Send love">❤️</button>
+                <p id="heart-message" class="heart-message" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="birthday-cake-section" class="birthday-cake-section section">
+            <h2>Make A Wish</h2>
+            <div class="cake-container">
+                <div class="cake" aria-hidden="true">
+                    <div class="candle-group">
+                        <span class="candle"><span class="flame"></span></span>
+                        <span class="candle"><span class="flame"></span></span>
+                        <span class="candle"><span class="flame"></span></span>
+                    </div>
+                    <span class="cake-layer layer-1"></span>
+                    <span class="cake-layer layer-2"></span>
+                    <span class="cake-layer layer-3"></span>
+                </div>
+                <button id="blow-candles-btn" class="romantic-button" type="button">Blow The Candles</button>
+                <p id="birthday-wish" class="birthday-wish" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="romantic-quotes-section" class="romantic-quotes-section section">
+            <h2>Words Of Love</h2>
+            <div class="quote-carousel glass-panel">
+                <span class="quote-mark" aria-hidden="true">❤️</span>
+                <p class="current-quote" aria-live="polite"></p>
+                <span class="quote-mark" aria-hidden="true">❤️</span>
+            </div>
+        </section>
+
+        <section id="final-surprise-section" class="final-surprise-section section">
+            <h2>My Birthday Wish For You ❤️</h2>
+            <p class="final-message"></p>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Photo preview">
+        <button class="close-btn" type="button" aria-label="Close photo preview">&times;</button>
+        <img class="lightbox-content" id="lightbox-img" alt="">
+    </div>
+
+    <div id="grand-finale" class="grand-finale hidden" aria-hidden="true">
+        <h1 class="finale-title"></h1>
+        <p class="finale-subtitle"></p>
+    </div>
+
+    <div id="floating-elements-container" aria-hidden="true"></div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
